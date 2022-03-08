@@ -21,6 +21,10 @@ body {
   overflow-x: hidden;
 }
 
+section {
+  overflow-x: hidden;
+}
+
 .ball {
   position: absolute;
   border-radius: 100%;
@@ -150,7 +154,7 @@ a:hover {
     background: var(--bg-color);
     left: -100%;
     width: 100%;
-    z-index: 9;
+    z-index: 9999999999;
     min-height: calc(100vh - var(--header-height));
     transition: 0.2s;
   }
@@ -859,22 +863,27 @@ footer {
 }
 
 .equaliser-column:nth-child(1) .colour-bar {
+  -webkit-animation: color-bar 2s 1s ease-out alternate infinite;
   animation: color-bar 2s 1s ease-out alternate infinite;
 }
 
 .equaliser-column:nth-child(2) .colour-bar {
+  -webkit-animation: color-bar 2s 0.5s ease-out alternate infinite;
   animation: color-bar 2s 0.5s ease-out alternate infinite;
 }
 
 .equaliser-column:nth-child(3) .colour-bar {
+  -webkit-animation: color-bar 2s 1.5s ease-out alternate infinite;
   animation: color-bar 2s 1.5s ease-out alternate infinite;
 }
 
 .equaliser-column:nth-child(4) .colour-bar {
+  -webkit-animation: color-bar 2s 0.25s ease-out alternate infinite;
   animation: color-bar 2s 0.25s ease-out alternate infinite;
 }
 
 .equaliser-column:nth-child(5) .colour-bar {
+  -webkit-animation: color-bar 2s 2s ease-out alternate infinite;
   animation: color-bar 2s 2s ease-out alternate infinite;
 }
 
@@ -925,7 +934,7 @@ footer {
   }
   100% {
     height: 1px;
-    background: var(--main-color)
+    background: var(--main-color);
   }
 }
 /* @media (max-width: 576px) {
@@ -936,7 +945,7 @@ footer {
 
 @media (max-width: 576px) {
   .roadmap .swiper-slide {
-    min-width: 185px !important
+    min-width: 185px !important;
   }
 }
 
