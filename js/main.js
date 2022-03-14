@@ -2,7 +2,7 @@ AOS.init();
 // Some random colors
 const colors = ["#FADC94"];
 
-const numBalls = 100;
+const numBalls = 150;
 const balls = [];
 
 for (let i = 0; i < numBalls; i++) {
@@ -427,6 +427,10 @@ $(function () {
       top: $(`.${id}`).offset().top,
       behavior: "smooth",
     });
+    $('.navbar-collapse').removeClass('show')
+    $('.menu-toggler').attr("aria-expanded","false");
+/*    $('.open-menu').style.display= 'block'
+    $('.close-menu').style.display= 'none'*/
   });
 
   // $(".roadmap-tab .roadmap-tab-1").click();
@@ -448,4 +452,5 @@ $(function () {
     $(".roadmap-box-outer").removeClass("active");
     activeTab.addClass("active");
   });
+
 });
