@@ -217,8 +217,6 @@ a:hover {
 
     margin-top: var(--space-md) !important;
     padding: 5px 0;
-    border-bottom: 1px solid gray;
-    border-top: 1px solid gray;
     font-size: 12px;
   }
 }
@@ -893,7 +891,7 @@ footer {
 .equaliser-container {
   cursor: pointer;
   position: absolute;
-  right: 90px;
+  right: 20px;
   bottom: 40px;
   z-index: 101;
   display: flex;
@@ -1013,7 +1011,7 @@ footer {
 .equaliser-container {
   cursor: pointer;
   position: absolute;
-  right: 90px;
+  right: 20px;
   bottom: 40px;
   z-index: 101;
   display: flex;
